@@ -19,9 +19,11 @@ import java.util.List;
 import java.util.ArrayList;
 
 
+@SuppressWarnings("unused")
 public class AProcessor {
 
-    public AProcessor() {
+    @SuppressWarnings("unused")
+	public AProcessor() {
 		ArrayList<String> r1 = new ArrayList<String>();
 		ArrayList<String> r2 = new ArrayList<String>();
 		ArrayList<String> r3 = new ArrayList<String>();

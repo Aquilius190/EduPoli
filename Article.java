@@ -16,12 +16,19 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class Article {
+@SuppressWarnings("unused")
+public class Article implements java.io.Serializable {
 
 		String urlStr;
 		String category;
 		String range;
 		String title;
+		
+		public Article(String q)
+		{
+			category = q;
+		
+		}
 
     public Article(String URLp, String Cat, String ageR, String t1) {
 
@@ -67,6 +74,13 @@ public class Article {
     {
     	return category;
     }
+    public void printCat()
+    {
+    	System.out.println(category);
+    	
+    }
+    
+    //public 
 
 
 
